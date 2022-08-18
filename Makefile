@@ -35,6 +35,8 @@ define Package/tcp2udp/description
   tcp proxy serve for udp server
 endef
 
+GO_PKG_BUILD_VARS += GO111MODULE=auto
+
 define Package/tcp2udp/install
 	$(call GoPackage/Package/Install/Bin,$(PKG_INSTALL_DIR))
 
