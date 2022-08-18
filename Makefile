@@ -39,8 +39,8 @@ define Package/tcp2udp/install
 	$(call GoPackage/Package/Install/Bin,$(PKG_INSTALL_DIR))
 
 	$(INSTALL_DIR) $(1)/usr/bin/
-	$(CP) $(PKG_INSTALL_DIR)/usr/bin/tcp2udp $(1)/usr/bin/
+	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/bin/tcp2udp $(1)/usr/bin/
 endef
 
-$(eval $(call GoBinPackage,irtt))
-$(eval $(call BuildPackage,irtt))
+$(eval $(call GoBinPackage,tcp2udp))
+$(eval $(call BuildPackage,tcp2udp))
