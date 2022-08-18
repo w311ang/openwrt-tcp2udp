@@ -1,0 +1,17 @@
+--- a/main.go	2022-08-18 13:35:23.899127065 +0800
++++ b/main.go	2022-08-18 13:36:10.739127047 +0800
+@@ -2,11 +2,12 @@ package main
+ 
+ import (
+ 	"encoding/binary"
++	"os"
+ 	"log"
+ )
+ 
+-var TCP_ADDR = ":10014"
+-var UDP_ADDR = ":10014"
++var TCP_ADDR = os.Args[1]
++var UDP_ADDR = os.Args[2]
+ var TCP_READ_TIMEOUT_SEC = 10
+ var UDP_READ_TIMEOUT_SEC = 10
+ 
