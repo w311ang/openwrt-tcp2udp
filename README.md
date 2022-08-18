@@ -1,5 +1,17 @@
 # openwrt-tcp2udp
 
+## Build
+```bash
+# 获取源码
+git clone https://github.com/w311ang/openwrt-tcp2udp.git package/tcp2udp
+
+# 选中 Network -> tcp2udp
+make menuconfig
+
+# 编译 chinadns-ng
+make package/tcp2udp/{clean,compile} V=s
+```
+
 ## Thanks
 https://www.ohyee.cc/post/note_compile_go_to_openwrt
 
