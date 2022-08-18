@@ -26,7 +26,7 @@ include ../../lang/golang/golang-package.mk
 define Package/tcp2udp
   SECTION:=net
   CATEGORY:=Network
-  TITLE:=tcp2udp
+  TITLE:=A tcp proxy module installed in front of the udp server
   URL:=https://github.com/q191201771/tcp2udp
   DEPENDS:=$(GO_ARCH_DEPENDS)
 endef
