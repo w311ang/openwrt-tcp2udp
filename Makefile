@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=tcp2udp
-PKG_VERSION:=1.0.0
+PKG_SOURCE_DATE:=2018-12-28
 PKG_RELEASE:=1
 
 PKG_SOURCE_PROTO:=git
