@@ -21,7 +21,7 @@ GO_PKG:=github.com/q191201771/tcp2udp
 GO_PKG_LDFLAGS:=-s -w
 
 include $(INCLUDE_DIR)/package.mk
-include ../feeds/packages/lang/golang/golang-package.mk
+include ../../feeds/packages/lang/golang/golang-package.mk
 
 define Package/tcp2udp
   SECTION:=net
